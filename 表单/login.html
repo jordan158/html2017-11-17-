@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>表单</title>
+</head>
+<body>
+<form action="ok.html" method="get">
+<!--
+1.name的值可以任意，但是不要使用关键字
+2.type类型为文本
+3.action的值提交给哪个页面（url）
+4.method指的提交数据的方式，常用的有两种，get和post
+一。post,数据不会显示在地址栏上，安全性更高
+二.提交的数量不一样，get大概提交的是2000多k，post理论上是没有什么限制。
+三，响应速度，get要求立即响应，速度快一点
+四，get地址栏上会显示发送的详细数据，post则不会
+五，maxlength代表最多可输6个数字
+六，style="width:250px"表示表单宽度
+七。value="username"表示文本框中一打开就有username内容
+-->
+用户名：<input type="text" name="username" maxlength="6" style="width:250px" value="username"/><br/>
+密　码：<input type="password" name="passwd"/><br/>
+<input type="submit" value="登陆系统"/>
+<input type="reset" value="重新填写"/>
+
+</form>
+</body>
+</html>

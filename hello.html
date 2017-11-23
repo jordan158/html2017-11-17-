@@ -1,0 +1,60 @@
+<!--html基本运行原理-->
+<html>
+<head>
+<title>hello</title>
+<!--
+在国内我们编码一般是gbk或者gb2312俗称国标码
+编程专家们，为了网页具有更好的兼容性，设计了一种码utf-8
+ansi是美国国家标准协会 制定的一套码，比如中国ansi->gbk
+日本ansi->rbr
+*规定：我们网页本身的编码应当和content-type指令的编码要一致
+-->
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+</head>
+<body text="silver" link="black" background="??">
+<!--
+1.text="silver" body中的文本颜色为silver
+2.link="black"超链接的颜色为黑色
+3.backgroud背景图
+-->
+<b>横看成林</b><br/>
+<font color="red">远近高低各不同</font><br/>
+<!--size值可以取1-7-->
+<font size="7">不识庐山真面目</font>
+</p>这是一个段落</p>
+<h1>表头</h1>
+<br/>*****************************<br/>
+版权符号 <font size="7">&nbsp;</font><br/>
+<!--字符实体，人民币符号-->
+<font size="5">&yen;</font><br/>
+hello&nbsp;&nbsp;word.
+<br/>***********************<br/>
+<!--一条线-->
+<hr size="6" />
+<a href="http://www.baidu.com">连接到百度</a>
+<br/>*********************************<br/>
+<p>
+1.如果你希望跳转的网页是在网络，则在href属性写完整的url<br/>
+2.协议：//主机：端口/web应用/资源文件<br/>
+</p>
+<a href="mailto:xiaobing1813@gmail.com">发送邮件</a>
+<br/>*******************************<br/>
+<img src="benchi.jpg" width="200px" style="border:4px solid red"  alt="这是奔驰的发布会"/>
+<a href="http://www.baidu.com"><img src="http://d.hiphotos.baidu.com/image/pic/item/0824ab18972bd407964fd33772899e510eb3096b.jpg" width="800px"/></a>
+<br/>***********************************<br/>
+
+<div style="width:400px;height:200px;border:1px solid red;color:black;
+position:absolute;left:500px;top:50px">
+<table border="1px">
+<tr>
+<td>什么</td>
+<td>是吗</td>
+</tr>
+<tr>
+<td>为什么</td>
+<td>之所以</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

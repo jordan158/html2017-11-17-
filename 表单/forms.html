@@ -1,0 +1,64 @@
+<html>
+<head><title>表单元素</title></head>
+<body>
+<!--
+1.text文本，password密码。
+2.checkbox复选框
+3.radio 单选框
+4.hidden隐藏域
+5.image为图片提交
+6.submit提交数据，name为表单的名字，value为表单的值
+7.checked属性表示在复选框中默认选中
+-->
+<form action="ok.html" method="get">
+<!--复选框-->
+你最喜欢哪些城市：<br/>
+<input type="checkbox" name="cities" value="beijing" checked >北京
+<input type="checkbox" name="cities" value="shanghai">上海
+<input type="checkbox" name="cities" value="lundun">伦敦
+<input type="checkbox" name="cities" value="nanjing">南京
+<br/>
+<!--单选框-->
+你的性别是：
+<input type="radio" name="sex" value="man" checked>男
+<input type="radio" name="sex" value="wonen">女
+<br/>
+
+隐藏域的使用:
+<input type="hidden" name="date" value="ok"/>
+<br/>
+下拉列表:<br/>
+请选择您的出生地：
+<!--
+1.下列列表提交。
+2.size属性显示多少个
+3.multiple为可多选。
+4.selected默认选中北京
+-->
+<select name="adress" multiple/>
+<option value="sichuan">四川</option>
+<option value="beijing" selected>北京</option>
+<option value="jiangxi">江西</option>
+</select>
+<br/>
+
+<!--文本域
+表示输入显示
+wrap=off关闭自动换行
+-->
+<textarea wrap=off name="mytext" cols="40" rows="10">请输入...
+</textarea><br/>
+
+<!--文件上传的控件-->
+<input type="file" name="myfile">上传文件
+
+<br/>
+<input type="submit" value="测试提交"/>
+<br/>
+
+<!--这是一个图片按钮-->
+这是一个图片提交按钮：
+<input type="image" src="submit.jpg"/>
+</form>
+</body>
+</html>

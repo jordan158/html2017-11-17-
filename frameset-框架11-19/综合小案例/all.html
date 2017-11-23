@@ -1,0 +1,11 @@
+<!--
+1.先分top.html占20%，其它占80%
+2.80%再进行分割，左边的占20%，右边的占80%
+3.scrolling表示没有滚轴，noresize不能拖动，frameborder="0"没有边框
+-->
+<frameset rows="30%,*">
+<frame src="top.html" scrolling="no" noresize frameborder="0"/>
+<frameset cols="20%,*">
+<frame src="left.html" noresize frameborder="0"/>
+<frame name="right2" src="right.html">
+</frameset>
